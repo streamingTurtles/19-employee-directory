@@ -1,16 +1,18 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React from 'react'; 
-import Header from "./components/Header";
-import EmployeeSearch from "./components/EmployeeSearch";
+import Aheader from "./components/aheader";
+import EmpBoxSearch from "./components/empBoxSearch";
+import EmpReturnData from "./components/empReturnData"; 
 
 
 function App() {
   return (
-    // using flexbox
-    <div className="flexbox-container">
-      <Header/>
-      <EmployeeSearch/>
+    // removed flexbox - to possibly incorporate after testing layout of table
+    <div>
+      <Aheader/>
+      <EmpBoxSearch/>
+      <EmpReturnData/>
     </div>
     )
   }  

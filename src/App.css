@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+/* for header style  */
+.jumbotron {
+  height: 100px;
+  color: white;
+  background-color: #94f02b;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/* styles for EmployeeSearch.js */
+.form-group {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+.btn-primary {
+  color: white;
+  background-color: #d58a19;
+  border: none;
+  box-shadow: none; /* Removes blue halo */
+}
+.btn-primary:hover {
+  color:  #463604;
+  background-color: #dee2e6;
+  cursor: pointer;
+}
