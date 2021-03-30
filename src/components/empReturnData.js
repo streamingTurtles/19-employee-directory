@@ -113,7 +113,7 @@ class EmpReturnData extends React.Component {
                         <td>{item.name.last}</td>
                         <td>{item.phone}</td>
                         <td>{item.email}</td>
-                        <td>{DateFormat(item.dob.date, "isoDate")}</td>  
+                        <td>{DateFormat(item.dob.date, "paddedShortDate")}</td>  
                         </tr>
                     </tbody>
 
@@ -127,7 +127,7 @@ class EmpReturnData extends React.Component {
                             <td>{item.name.last}</td>
                             <td>{item.phone} </td>
                             <td>{item.email}</td>
-                            <td>{DateFormat(item.dob.date, "isoDate")}</td>  
+                            <td>{DateFormat(item.dob.date, "paddedShortDate")}</td>  
                         </tr>
                         </tbody>
                         :
