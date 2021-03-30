@@ -2,6 +2,10 @@ import React from "react";
 import API from "../api.js"
 import Search from "./empBoxSearch" 
 
+// use dateFormat to clean the json date info returned in json
+// https://www.npmjs.com/package/dateformat
+import DateFormat from 'dateformat'
+
 
 // create class component based on api protocol for anticipated data
 class EmpReturnData extends React.Component {
@@ -104,12 +108,12 @@ class EmpReturnData extends React.Component {
                     item.name.first.toLowerCase().includes(this.state.search) ?
                     <tbody key={item.login.uuid}>
                         <tr>
-                        <td ><img src={item.picture.thumbnail} className="rounded-circle" alt="thumbnail" /></td>
-                        <td >{item.name.first}</td>
-                        <td >{item.name.last}</td>
-                        <td >{item.phone}</td>
-                        <td >{item.email}</td>
-                        <td>{item.dob.date}</td>  
+                        <td><img src={item.picture.thumbnail} className="rounded-circle" alt="thumbnail" /></td>
+                        <td>{item.name.first}</td>
+                        <td>{item.name.last}</td>
+                        <td>{item.phone}</td>
+                        <td>{item.email}</td>
+                        <td>{DateFormat(item.dob.date, "isoDate")}</td>  
                         </tr>
                     </tbody>
 
@@ -119,11 +123,11 @@ class EmpReturnData extends React.Component {
                         <tbody key={item.login.uuid}>
                         <tr>
                         <td ><img src={item.picture.thumbnail} className="rounded-circle" alt="thumbnail" /></td>
-                            <td >{item.name.first}</td>
-                            <td >{item.name.last}</td>
-                            <td >{item.phone} </td>
-                            <td >{item.email}</td>
-                            <td>{item.dob.date}</td>  
+                            <td>{item.name.first}</td>
+                            <td>{item.name.last}</td>
+                            <td>{item.phone} </td>
+                            <td>{item.email}</td>
+                            <td>{DateFormat(item.dob.date, "isoDate")}</td>  
                         </tr>
                         </tbody>
                         :

@@ -13,5 +13,7 @@ export default {
 // Employee data content from generic source link
 // https://randomuser.me/
 
-// FYI - for review
+// FYI - Resources for review
 // https://www.digitalocean.com/community/tutorials/react-axios-react
+// https://www.educative.io/edpresso/how-to-make-an-axios-get-request
+// https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index

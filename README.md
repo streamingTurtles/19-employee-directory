@@ -1,20 +1,84 @@
-# 19-employee-directory
+# Project Title: HW 19-employee-directory
+    
+  ## Table of Contents:
+  - [Project Description](#project-description)
+  - [Installation Instructions](#installation-instructions)
+  - [Project Usage Information](#project-usage-information)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [License Type](#license-type)
+  - [Github Repo Link](#github-repo-link)
+  - [HEROKU Live APP Link](https://streamingturtles.github.io/19-employee-directory/)
+  - [Github Information](#github-information)
+  - [my-email-for-questions-and-information](#my-email-for-questions-and-information)
 
-to add content:
 
 
+  - - -
+ 
+  ## Screenshot of App: (search using first name - shown next):
+  ![Screenshot](./public/employee-directory-pic-1.png)
+   
+  ## Screenshot of name search about the first name:
+  ![Screenshot](./public/employee-directory-pic-2.png)
+  
+  ## Screenshot of Refreshed page: (now search using last name - shown next):
+  ![Screenshot](./public/employee-directory-pic-3.png)
+   
+  ## Screenshot of name search about the last name:
+  ![Screenshot](./public/employee-directory-pic-4.png)
 
-* COMMITS TRACKING:
-* commit-1: Initial Commit
-* commit-2: adding create-react-app React Boiler plate application files & .gitignore file
-* commit-3: added bootstrap & jQuery links to index.html, edited App.js file removing boiler palte REACT content & replace with new files in a newly created components folder, Header.js & EmployeeSearch.js
+ 
 
-* commit-4: renamed component files to better represent the data.  Updated aheader.js component file by replacing the header with bootstraps Jumbotron and removed flexbox design - hence included bootstrap and google font awesome for styling to index.html file. Created api.js route file to use axios for easy promise based data API fetching from the randomuser.me website - hence installed axios.  With axios installed, I created the empReturnData.js component file which renders the returned api data.  Next to add search logic to find employees by their names, format the date layout and add logic to filter, rearange the data in either accending or decenting order.
 
-* commit-5: Added logic to search for an employee by using either first or last name. Added ability to sort the names in either assending or desending order for first or last names.  Corrected duplicate search component rendering.
+  &nbsp;
+  - - -
+  ## Project Description:
+  - This is an React application running on gitHub pages that renders an employee directory from the [Random User API](https://randomuser.me/) website. The app renders random users from which you can search via first and last name.  The app can also sort the employee list in either ascending or descending order about the first or last names.  When the page is refreshed, the app recycles the apiSearch with a new random employee list.  The app also implements updating yearly to the currnent Year, as represented in the footer.  The application runs locally on localhost as well as on github pages. Example screenshots are shown.
 
-* commit-6: successfully deployed to gh-pages following the instructions per Readme.md link - https://create-react-app.dev/docs/deployment/#github-pages
+  &nbsp;
+  - - -
+  ## Installation Instructions:
+  - The user only has to follow the Github Deployed Application link https://streamingturtles.github.io/19-employee-directory/  or can run the application locally from the terminal by first running >npm i to get all dependencies and then to begin the app, type:  >npm start  and the Employee Directory App will open in the browser.  
 
-* commit-7: adding a footer with automatic year update
+  &nbsp;
+  - - -
+  ## Project Usage Information:
+  - To be able to view and sort a random employee directory, either running locally or running online hosted by gitHub.
 
+  &nbsp;
+  - - -
+  ## Contribution Guidelines:
+  - I made this, PAC with Streaming Turtles, LLC
+
+
+  &nbsp;
+  - - -
+  ## License Type:
+  - [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  &nbsp;
+  - - -
+  ## gitHub Repo Link:
+  - https://github.com/streamingTurtles/19-employee-directory
+
+  &nbsp;
+  - - -
+  ## GitHub pages Live Application URL:
+  - https://streamingturtles.github.io/19-employee-directory/
+
+  &nbsp;
+  - - -
+  ## Github Information:
+
+  ![Streaming Turtles, LLC](https://avatars2.githubusercontent.com/u/1152009?v=4)
+- user name: streamingTurtles
+- [GitHub Profile](https://github.com/streamingTurtles)
+
+  ## my-email-for-questions-and-information:
+  - pcardillo@streamingTurtles.com  
+
+  &nbsp;
+- - -
+- - -
+Peter Cardillo, Columbia Engineering Fullstack Bootcamp, 2020-2021  
 
