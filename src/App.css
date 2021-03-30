@@ -100,3 +100,18 @@
     top: 16px;
     left: 10px;
 }
+
+/* for footer style  */
+.footer {
+  height: 50px;
+  color: white;
+  background-color: #94f02b;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  flex-direction: column;
+  justify-content: center;
+
+}

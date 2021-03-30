@@ -13,4 +13,8 @@ to add content:
 
 * commit-5: Added logic to search for an employee by using either first or last name. Added ability to sort the names in either assending or desending order for first or last names.  Corrected duplicate search component rendering.
 
-* commit-6: get app running on github pages.
+* commit-6: successfully deployed to gh-pages following the instructions per Readme.md link - https://create-react-app.dev/docs/deployment/#github-pages
+
+* commit-7: adding a footer with automatic year update
+
+

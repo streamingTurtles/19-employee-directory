@@ -2,8 +2,9 @@
 // import './App.css';
 import React from 'react'; 
 import Aheader from "./components/aheader";
-import EmpBoxSearch from "./components/empBoxSearch";
+import EmpBoxSearch from "./components/empBoxSearch"; // not needed here
 import EmpReturnData from "./components/empReturnData"; 
+import Footer from './components/footer';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Aheader/>
       {/* <EmpBoxSearch/> */}
       <EmpReturnData/>
+      <Footer/>
     </div>
     )
   }  
