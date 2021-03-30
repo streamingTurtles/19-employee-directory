@@ -1,12 +1,13 @@
 import React from "react";
 import API from "../api.js"
-import Search from "./empBoxSearch"
+import Search from "./empBoxSearch" 
 
 
 // create class component based on api protocol for anticipated data
 class EmpReturnData extends React.Component {
 
-    state = {        
+    state = {
+        orderByName: "",
         results: [],
         search: ""
     }
@@ -23,11 +24,66 @@ class EmpReturnData extends React.Component {
     }
 
 
-    // Render employee data
+
+     // Manage search bar input
+     // https://www.pluralsight.com/guides/handling-multiple-inputs-with-single-onchange-handler-react
+    searchBarInputMgmt = event => {
+        if (event.target.name === "search") {
+            const searchName = event.target.value.toLowerCase();
+            this.setState({ search: searchName })
+        }
+    }
+
+
+
+
+    // Alphabetize in ascending or descening order by first name
+    orderFirstName = () => {
+        const firstNameEmp = this.state.results.sort((a, b) => {
+        if (b.name.first > a.name.first) {
+            return -1
+        }
+        if (a.name.first > b.name.first) {
+            return 1
+        }
+        return 0;
+        });
+        if (this.state.orderByName === "makeDescending") {
+            firstNameEmp.reverse();
+            this.setState({ orderByName: "makeAscending" });
+          } else {
+            this.setState({ orderByName: "makeDescending" });
+          }
+          this.setState({ results: firstNameEmp })
+    }
+
+
+    // Alphabetize in ascending or descening order by last name
+    orderLastName = () => {
+        const lastNameEmp = this.state.results.sort((a, b) => {
+        if (b.name.last > a.name.last) {
+            return -1
+        }
+        if (a.name.last > b.name.last) {
+            return 1
+        }
+        return 0;
+        });
+        if (this.state.orderByName === "makeDescending") {
+            lastNameEmp.reverse();
+            this.setState({ orderByName: "makeAscending" });
+        } else {
+            this.setState({ orderByName: "makeDescending" });
+        }
+        this.setState({ results: lastNameEmp })
+    }
+
+
+    // Render the employee data
     render() {
         return (
         <div>
-            <Search handleInputChange={this.handleInputChange}
+            <Search searchBarInputMgmt={this.searchBarInputMgmt}
             search={this.state.search} />
             {/* using bootstrap classes for returned data */}
             <div className="table-responsive">
@@ -35,8 +91,8 @@ class EmpReturnData extends React.Component {
                 <thead>
                 <tr>
                     <th>Image</th>
-                    <th>First Name <span className="downArrow" onClick={this.sortByFName}></span></th>
-                    <th>Last Name <span className="downArrow" onClick={this.sortByLName}></span></th>
+                    <th>First Name <span className="downArrow" onClick={this.orderFirstName}></span></th>
+                    <th>Last Name <span className="downArrow" onClick={this.orderLastName}></span></th>
                     <th>Phone</th>
                     <th>Email</th>
                     <th>DOB </th>

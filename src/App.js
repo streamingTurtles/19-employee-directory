@@ -11,7 +11,7 @@ function App() {
     // removed flexbox - to possibly incorporate after testing layout of table
     <div>
       <Aheader/>
-      <EmpBoxSearch/>
+      {/* <EmpBoxSearch/> */}
       <EmpReturnData/>
     </div>
     )
